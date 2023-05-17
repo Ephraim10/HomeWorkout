@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Discover">
+
+    <LinearLayout
+        android:id="@+id/reportLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/reportTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/report_title_label"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/reportTitle"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:hint="@string/report_title_hint"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/trainingFeedbackLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/training_feedback_label"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/trainingFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:hint="@string/training_feedback_hint"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/goalsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goals_label"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/goals"
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:hint="@string/goals_hint"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/saveReportButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_report_button" />
+
+        <TextView
+            android:id="@+id/reportsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reports_label"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+        <ListView
+            android:id="@+id/reportListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:divider="@null"
+            android:dividerHeight="0dp" />
+
+    </LinearLayout>
+</ScrollView>

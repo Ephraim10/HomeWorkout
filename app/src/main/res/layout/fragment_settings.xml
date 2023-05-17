@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".Settings">
+    <!-- Add a TextView for the page title -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:padding="16dp"/>
+
+    <!-- Add a horizontal line separator -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorDivider"/>
+
+    <!-- Add a RadioGroup for the gender selection -->
+    <TextView
+        android:id="@+id/gender_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/gender_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/male_button">
+
+    <RadioButton
+        android:id="@+id/male_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <RadioButton
+        android:id="@+id/female_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <RadioButton
+        android:id="@+id/other_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+    </RadioGroup>
+
+    <!-- Add a Spinner for the workout goal selection -->
+    <TextView
+        android:id="@+id/goal_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Workout Goal"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <Spinner
+        android:id="@+id/goal_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:entries="@array/workout_goals"
+        android:background="@drawable/custom_spinner"/>
+
+    <!-- Add a CheckBox for the notification settings -->
+    <TextView
+        android:id="@+id/notification_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/notification_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receive workout reminders"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:checked="true"
+        android:padding="8dp"/>
+</LinearLayout>
